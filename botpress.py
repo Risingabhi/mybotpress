@@ -12,4 +12,4 @@ def receive_data():
         return 'Invalid request method', 405
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=10000,debug=True)
