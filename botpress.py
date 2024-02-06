@@ -5,6 +5,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def receive_data():
     if request.method == 'GET':
+        print("yes request is coming")
         lead_data = request.json
         print("Data received:", lead_data)
         return 'Data received successfully!', 200
